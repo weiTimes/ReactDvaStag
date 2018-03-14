@@ -1,0 +1,21 @@
+{
+    "presets": ["env", "react"],
+    "plugins": [
+        "transform-runtime",
+        "transform-decorators-legacy",
+        "transform-object-rest-spread",
+        [
+            "import",
+            {
+                "libraryName": "antd-mobile",
+                "style": true
+            }
+        ],
+        "transform-class-properties"
+    ],
+    "env": {
+        "development": {
+            "plugins": ["dva-hmr"]
+        }
+    }
+}
